@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+
+    <title>Text</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <div class="logo-container">
+          <img src="images/AK logo.png" alt="logo" height="100px" width="300px" />
+      </div>
+      <div class="nav-content" id="nav-content">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link ">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link">Outline</a>
+          <a href="text.html" class="nav-link active">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+          <!-- Add more links here -->
+         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </a>
+      </div>
+  </div>
+  <hr id="up"><hr><hr>
+    <div class="nav-hamburger" id="nav-hamburger">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link">Outline</a>
+          <a href="text.html" class="nav-link active">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+          
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+     
+        <!-- Add more links here -->
+    </div>
+    <a href="#up"><img class="bookmarkarrow" src="images/arrow.png" height="100" width="100" style="float:right; position:absolute;right:7%;bottom:7%;position:fixed;z-index:2;"></a>
+    <br><br><br><hr>
+  
+<!-- This is for information -->
+<div class="info">
+    <h1>Text Alignment and Text Direction
+    </h1>
+    <p>In this chapter you will learn about the following properties:
+        
+        <doc>text-align
+            text-align-last
+            direction
+            unicode-bidi
+            vertical-align</doc>
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+p{
+text-align:justify;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Heading 1 (center)&lt;/h1&gt;
+&lt;h2&gt;Heading 2 (left)&lt;/h2&gt;
+&lt;h3&gt;Heading 3 (right)&lt;/h3&gt;
+
+&lt;p&gt;The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right. The three headings above are aligned center, left and right.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+         
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Text Align Last
+    </h1>
+    <p> The text-align-last property specifies how to align the last line of a text.
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.a {
+    text-align-last: right;
+}
+
+p.b {
+    text-align-last: center;
+}
+
+p.c {
+    text-align-last: justify;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The text-align-last Property&lt;/h1&gt;
+
+&lt;h2&gt;text-align-last: right:&lt;/h2&gt;
+&lt;p class="a"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.&lt;/p&gt;
+
+&lt;h2&gt;text-align-last: center:&lt;/h2&gt;
+&lt;p class="b"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.&lt;/p&gt;
+
+&lt;h2&gt;text-align-last: justify:&lt;/h2&gt;
+&lt;p class="c"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Text Direction</h1>
+    <p>The direction and unicode-bidi properties can be used to change the text direction of an element:
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;This is the default text direction.&lt;/p&gt;
+
+&lt;p class="ex1"&gt;This is right-to-left text direction.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Text Decoration
+    </h1>
+    <p>In this chapter you will learn about the following properties:
+        
+        <doc>text-decoration-line
+            text-decoration-color
+            text-decoration-style
+            text-decoration-thickness
+            text-decoration</doc>
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+  text-decoration: overline;
+}
+
+h2 {
+  text-decoration: line-through;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+p.ex {
+  text-decoration: overline underline;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Overline text decoration&lt;/h1&gt;
+&lt;h2&gt;Line-through text decoration&lt;/h2&gt;
+&lt;h3&gt;Underline text decoration&lt;/h3&gt;
+&lt;p class="ex"&gt;Overline and underline text decoration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It is not recommended to underline text that is not a link, as this often confuses 
+the reader.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Specify a Color for the Decoration Line
+        
+    </h1>
+    <p>The <doc>text-decoration-color</doc> property is used to set the color of the decoration line.
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+
+h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+}
+
+h3 {
+    text-decoration-line: underline;
+    text-decoration-color: green;  
+}
+
+p {
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;  
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Overline text decoration&lt;/h1&gt;
+&lt;h2&gt;Line-through text decoration&lt;/h2&gt;
+&lt;h3&gt;Underline text decoration&lt;/h3&gt;
+&lt;p&gt;Overline and underline text decoration.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Specify a style for the Decoration Line
+        
+    </h1>
+    <p>The <doc>text-decoration-style</doc>  property is used to set the style of the decoration line.
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+    text-decoration-line: underline;
+    text-decoration-style: solid; /* this is default */
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+h3 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;  
+}
+
+p.ex1 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;  
+}
+
+p.ex2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;  
+}
+
+p.ex3 {
+    text-decoration-line: underline;
+    text-decoration-color: red;  
+    text-decoration-style: wavy;  
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;p class="ex1"&gt;A paragraph.&lt;/p&gt;
+&lt;p class="ex2"&gt;Another paragraph.&lt;/p&gt;
+&lt;p class="ex3"&gt;Another paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Specify a thickness  for the Decoration Line
+        
+    </h1>
+    <p>The <doc>text-decoration-thickness </doc>  property is used to set the thickness  of the decoration line.
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;  /* this is default */
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+
+h3 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 25%;
+}
+
+p {
+    text-decoration-line: underline;
+    text-decoration-color: red;  
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;  
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;p&gt;A paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Text Spacing
+        </h1>
+    <p>In this chapter you will learn about the following properties:
+        
+        <doc>text-indent
+            letter-spacing
+            line-height
+            word-spacing
+            white-space</doc>
+    </p>
+  
+  </div>
+
+  <!-- This is for information -->
+<div class="info">
+    <h1>Text Indentation
+        </h1>
+    <p>The text-indent property is used to specify the indentation of the first line of a text:
+</p>
+  
+  </div>
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {
+    text-indent: 50px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Using text-indent&lt;/h1&gt;
+
+&lt;p&gt;In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Letter Spacing
+        </h1>
+    <p>The letter-spacing property is used to specify the space between the characters in a text.
+        
+        The following example demonstrates how to increase or decrease the space between characters:
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h2 {
+  letter-spacing: 5px;
+}
+
+h3 {
+  letter-spacing: -2px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Using letter-spacing&lt;/h1&gt;
+
+&lt;h2&gt;This is heading 1&lt;/h2&gt;
+&lt;h3&gt;This is heading 2&lt;/h3&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Line Height
+        </h1>
+    <p>The line-height property is used to specify the space between lines:
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  line-height: 1.8;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Using line-height&lt;/h1&gt;
+
+&lt;p&gt;
+This is a paragraph with a standard line-height.&lt;br&gt;
+The default line height in most browsers is about 110% to 120%.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p class="small"&gt;
+This is a paragraph with a smaller line-height.&lt;br&gt;
+This is a paragraph with a smaller line-height.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p class="big"&gt;
+This is a paragraph with a bigger line-height.&lt;br&gt;
+This is a paragraph with a bigger line-height.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Word Spacing
+    </h1>
+    <p>The word-spacing property is used to specify the space between the words in a text.
+        
+        The following example demonstrates how to increase or decrease the space between words:
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.one {
+    word-spacing: 10px;
+}
+
+p.two {
+    word-spacing: -2px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Using word-spacing&lt;/h1&gt;
+
+&lt;p&gt;This is a paragraph with normal word spacing.&lt;/p&gt;
+
+&lt;p class="one"&gt;This is a paragraph with larger word spacing.&lt;/p&gt;
+
+&lt;p class="two"&gt;This is a paragraph with smaller word spacing.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+    <h1>White Space</h1>
+    <p>The white-space property specifies how white-space inside an element is handled.
+        
+        This example demonstrates how to disable text wrapping inside an element:
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.a {
+  white-space: nowrap;
+}
+
+p.b {
+  white-space: normal;
+}
+
+p.c {
+  white-space: pre;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The white-space Property&lt;/h1&gt;
+
+&lt;h2&gt;white-space: nowrap:&lt;/h2&gt;
+&lt;p class="a"&gt;
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+&lt;/p&gt;
+
+&lt;h2&gt;white-space: normal:&lt;/h2&gt;
+&lt;p class="b"&gt;
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+&lt;/p&gt;
+
+&lt;h2&gt;white-space: pre:&lt;/h2&gt;
+&lt;p class="c"&gt;
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>The CSS font-family Property
+        </h1>
+    <p>In CSS, we use the font-family property to specify the font of a text.
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS font-family&lt;/h1&gt;
+&lt;p class="p1"&gt;This is a paragraph, shown in the Times New Roman font.&lt;/p&gt;
+&lt;p class="p2"&gt;This is a paragraph, shown in the Arial font.&lt;/p&gt;
+&lt;p class="p3"&gt;This is a paragraph, shown in the Lucida Console font.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+    <h1>Set Font Size With Pixels
+    </h1>
+    <p>Setting the text size with pixels gives you full control over the text size:
+    </p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS text-transform Property
+  </h1>
+  <p>The text-transform property controls the capitalization of text.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#example1 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: border-box;  
+}
+
+#example2 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The background-clip Property&lt;/h1&gt;
+
+&lt;p&gt;The background-clip property defines how far the background should extend within an element.&lt;/p&gt;
+
+&lt;p&gt;background-clip: border-box (this is default):&lt;/p&gt;
+&lt;div id="example1">
+  &lt;p&gt;The background extends behind the border.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;background-clip: padding-box:&lt;/p&gt;
+&lt;div id="example2">
+  &lt;p&gt;The background extends to the inside edge of the border.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;background-clip: content-box:&lt;/p&gt;
+&lt;div id="example3">
+  &lt;p&gt;The background extends to the edge of the content box.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS text-shadow Property
+  </h1>
+  <p>The text-shadow property adds shadow to text.
+
+    This property accepts a comma-separated list of shadows to be applied to the text.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Text-shadow with red and blue neon glow&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+    <script src="main.js" defer></script>
+    <script src="prism.js"></script>
+  </body>
+</html>

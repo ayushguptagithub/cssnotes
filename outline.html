@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+
+    <title>Outline</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <div class="logo-container">
+          <img src="images/AK logo.png" alt="logo" height="100px" width="300px" />
+      </div>
+      <div class="nav-content" id="nav-content">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link active">Outline</a>
+          <a href="text.html" class="nav-link">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+          <!-- Add more links here -->
+         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </a>
+      </div>
+  </div>
+  <hr id="up"><hr><hr>
+    <div class="nav-hamburger" id="nav-hamburger">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link ">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link active">Outline</a>
+          <a href="text.html" class="nav-link">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+          
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+     
+        <!-- Add more links here -->
+    </div>
+    <a href="#up"><img class="bookmarkarrow" src="images/arrow.png" height="100" width="100" style="float:right; position:absolute;right:7%;bottom:7%;position:fixed;z-index:2;"></a>
+    <br><br><br><hr>
+
+   <!-- This is for information -->
+   <div class="info">
+    <h1>CSS Outline</h1>
+    <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+    
+        CSS has the following outline properties:
+
+        <doc>outline-style
+            outline-color
+            outline-width
+            outline-offset
+            outline</doc>
+    </p>
+  <img src="images/outline info.png" height="300"  style="margin: 30px;"/>
+  </div>
+
+  <!-- This is for information -->
+  <div class="info">
+    <h1>outline-style</h1>
+    <p>The <doc>outline-style</doc> property specifies the style of the outline, and can have one of the following values:
+
+        <doc>dotted</doc> - Defines a dotted outline
+        <doc>dashed</doc> - Defines a dashed outline
+        <doc>solid </doc>- Defines a solid outline
+        <doc>double</doc> - Defines a double outline
+        <doc>groove</doc> - Defines a 3D grooved outline
+        <doc>ridge </doc>- Defines a 3D ridged outline
+        <doc>inset </doc>- Defines a 3D inset outline
+        <doc>outset</doc> - Defines a 3D outset outline
+        <doc>none </doc> - Defines no outline
+        <doc>hidden</doc> - Defines a hidden outline
+
+    </p>
+  <img src="images/outline info.png" height="300"  style="margin: 30px;"/>
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {outline-color:red;}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;The outline-style Property&lt;/h2&gt;
+
+&lt;p class="dotted"&gt;A dotted outline&lt;/p&gt;
+&lt;p class="dashed"&gt;A dashed outline&lt;/p&gt;
+&lt;p class="solid"&gt;A solid outline&lt;/p&gt;
+&lt;p class="double"&gt;A double outline&lt;/p&gt;
+&lt;p class="groove"&gt;A groove outline. The effect depends on the outline-color value.&lt;/p&gt;
+&lt;p class="ridge"&gt;A ridge outline. The effect depends on the outline-color value.&lt;/p&gt;
+&lt;p class="inset"&gt;An inset outline. The effect depends on the outline-color value.&lt;/p&gt;
+&lt;p class="outset"&gt;An outset outline. The effect depends on the outline-color value.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+    <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Outline Width
+  </h1>
+  <p>The outline-width property specifies the width of the outline, and can have one of the following values:
+    
+    thin (typically 1px)
+    medium (typically 3px)
+    thick (typically 5px)
+    A specific size (in px, pt, cm, em, etc)
+    The following example shows some outlines with different widths:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+<h1>Example</h1>
+<div class="block">
+  <div class="container">
+    <div class="code-wrapper">
+      <pre>
+        <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+
+p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+
+p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;The outline-width Property&lt;/h2&gt;
+
+&lt;p class="ex1"&gt;A thin outline.&lt;/p&gt;
+&lt;p class="ex2"&gt;A medium outline.&lt;/p&gt;
+&lt;p class="ex3"&gt;A thick outline.&lt;/p&gt;
+&lt;p class="ex4"&gt;A 4px thick outline.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+        </code>
+      </pre>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+
+  <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+  <div class="container">
+    <div class="code-wrapper">
+      <pre>
+        <code id="code" class="">
+          <img src="notepadeg.png" />
+
+        </code>
+      </pre>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Outline Color
+  </h1>
+  <p> The outline-color property is used to set the color of the outline.
+    
+    The color can be set by:
+    
+    name - specify a color name, like "red"
+    HEX - specify a hex value, like "#ff0000"
+    RGB - specify a RGB value, like "rgb(255,0,0)"
+    HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+    invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+<h1>Example</h1>
+<div class="block">
+  <div class="container">
+    <div class="code-wrapper">
+      <pre>
+        <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;The outline-color Property&lt;/h2&gt;
+&lt;p&gt;The outline-color property is used to set the color of the outline.&lt;/p&gt;
+
+&lt;p class="ex1"&gt;A solid red outline.&lt;/p&gt;
+&lt;p class="ex2"&gt;A dotted blue outline.&lt;/p&gt;
+&lt;p class="ex3"&gt;An outset grey outline.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+        </code>
+      </pre>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+
+  <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+  <div class="container">
+    <div class="code-wrapper">
+      <pre>
+        <code id="code" class="">
+          <img src="notepadeg.png" />
+
+        </code>
+      </pre>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1> CSS Outline Offset
+  </h1>
+  <p>The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+    
+    The following example specifies an outline 15px outside the border edge:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+<h1>Example</h1>
+<div class="block">
+  <div class="container">
+    <div class="code-wrapper">
+      <pre>
+        <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;The outline-offset Property&lt;/h2&gt;
+
+&lt;p&gt;This paragraph has an outline 15px outside the border edge.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+        </code>
+      </pre>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+
+  <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+  <div class="container">
+    <div class="code-wrapper">
+      <pre>
+        <code id="code" class="">
+          <img src="notepadeg.png" />
+
+        </code>
+      </pre>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+    <script src="main.js" defer></script>
+    <script src="prism.js"></script>
+  </body>
+</html>

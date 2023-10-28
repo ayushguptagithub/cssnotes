@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/show-hint.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/show-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/html-hint.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .containercompile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,62,255,1) 100%, rgba(0,212,255,1) 100%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 100%;
+            width:100%;
+        }
+
+        .code-editor {
+            flex: 1;
+            margin-right: 20px;
+            color: #ae00ff;
+            
+        }
+        #code{
+          height: 100vh;
+        }
+
+        .CodeMirror {
+            border: 1px solid #ccc;
+            height: 60vh;
+            z-index:0;
+        }
+
+        .preview {
+            flex: 1;
+            color: #ae00ff;
+            height: 60vh;
+            
+        }
+
+        iframe {
+            width: 100%;
+            height: 60vh;
+            border: none;
+        }
+        #output{
+            background-color: #ccc;
+        }
+        @media screen and (max-width:700px) {
+            .containercompile {
+            display: flex;
+            flex-direction: column;
+            height:1000px;
+        }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="images/AK logo.png" alt="logo" height="100px" width="300px" />
+        </div>
+        <div class="nav-content" id="nav-content">
+            <a href="index.html" class="nav-link">Intro</a>
+            <a href="selector.html" class="nav-link">Selectors</a>
+            <a href="background.html" class="nav-link ">Background</a>
+            <a href="Colors.html" class="nav-link">Colors</a>
+            <a href="borders.html" class="nav-link">Borders</a>
+            <a href="box model.html" class="nav-link">Box Model</a>
+            <a href="outline.html" class="nav-link">Outline</a>
+            <a href="text.html" class="nav-link">Text</a>
+            <a href="fonts.html" class="nav-link">Fonts</a>
+            <a href="links.html" class="nav-link">Links</a>
+            <a href="tables.html" class="nav-link">Tables</a>
+            <a href="css layout.html" class="nav-link ">Css Layout</a>
+            <a href="align.html" class="nav-link">Align</a>
+            <a href="combinators.html" class="nav-link">Combinators</a>
+            <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+            <a href="opacity.html" class="nav-link">Opacity</a>
+            <a href="basicthings.html" class="nav-link">Dropdown</a>
+            <a href="forms.html" class="nav-link ">css Forms</a>
+  
+            <a href="Compiler.html" class="nav-link active">Compiler</a>
+            <!-- Add more links here -->
+           <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+              </a>
+        </div>
+    </div>
+    <hr id="up"><hr><hr>
+      <div class="nav-hamburger" id="nav-hamburger">
+            <a href="index.html" class="nav-link">Intro</a>
+            <a href="selector.html" class="nav-link">Selectors</a>
+            <a href="background.html" class="nav-link">Background</a>
+            <a href="Colors.html" class="nav-link">Colors</a>
+            <a href="borders.html" class="nav-link">Borders</a>
+            <a href="box model.html" class="nav-link">Box Model</a>
+            <a href="outline.html" class="nav-link">Outline</a>
+            <a href="text.html" class="nav-link">Text</a>
+            <a href="fonts.html" class="nav-link">Fonts</a>
+            <a href="links.html" class="nav-link">Links</a>
+            <a href="tables.html" class="nav-link">Tables</a>
+            <a href="css layout.html" class="nav-link ">Css Layout</a>
+            <a href="align.html" class="nav-link">Align</a>
+            <a href="combinators.html" class="nav-link">Combinators</a>
+            <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+            <a href="opacity.html" class="nav-link">Opacity</a>
+            <a href="basicthings.html" class="nav-link">Dropdown</a>
+            <a href="forms.html" class="nav-link">css Forms</a>
+            
+            <a href="Compiler.html" class="nav-link active">Compiler</a>
+       
+          <!-- Add more links here -->
+      </div>
+      <hr><hr><hr><br><br>
+
+
+    <div class="containercompile">
+        <div class="code-editor">
+            <h2>Code</h2>
+            <textarea id="code"></textarea>
+        </div>
+        <div class="preview">
+            <h2>Preview</h2>
+            <iframe id="output" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        const codeTextarea = document.getElementById('code');
+        const outputFrame = document.getElementById('output');
+
+        // Initialize CodeMirror with HTML mode and real-time update
+        const editor = CodeMirror.fromTextArea(codeTextarea, {
+            mode: 'htmlmixed',
+            theme: 'default',
+            lineNumbers: true,
+            lineWrapping: true,
+            matchBrackets: true,
+            autoCloseBrackets: true,
+            extraKeys: { 'Ctrl-Space': 'autocomplete' },
+        });
+
+        editor.on('change', () => {
+            const htmlCode = editor.getValue();
+            outputFrame.srcdoc = htmlCode;
+        });
+
+        // Custom function to automatically add closing tags
+        editor.on('beforeChange', (editor, changeObj) => {
+            if (changeObj.text[0] === '<') {
+                const cursorPos = editor.getCursor();
+                const lineContent = editor.getLine(cursorPos.line);
+                const cursorCol = cursorPos.ch;
+                const tagStart = lineContent.lastIndexOf('<', cursorCol - 1);
+
+                if (tagStart !== -1) {
+                    const tagName = lineContent.slice(tagStart + 1, cursorCol);
+                    const tag = `<${tagName}>`;
+                    const closeTag = `</${tagName}>`;
+                    const newText = changeObj.text[0] + closeTag + changeObj.text[0];
+
+                    changeObj.update(changeObj.from, changeObj.to, [newText]);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

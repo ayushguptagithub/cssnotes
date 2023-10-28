@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+
+    <title>Background</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo-container">
+          <img src="images/AK logo.png" alt="logo" height="100px" width="300px" />
+      </div>
+      <div class="nav-content" id="nav-content">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link active">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link">Outline</a>
+          <a href="text.html" class="nav-link">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+          <!-- Add more links here -->
+         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </a>
+      </div>
+  </div>
+  <hr id="up"><hr><hr>
+    <div class="nav-hamburger" id="nav-hamburger">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link active">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link">Outline</a>
+          <a href="text.html" class="nav-link">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+          
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+     
+        <!-- Add more links here -->
+    </div>
+    <a href="#up"><img class="bookmarkarrow" src="images/arrow.png" height="100" width="100" style="float:right; position:absolute;right:7%;bottom:7%;position:fixed;z-index:2;"></a>
+    <br><br><br><hr>
+ <!-- This is for information -->
+ <div class="info">
+    <h1>CSS background-color</h1>
+    <p>The <doc>background-color</doc> property specifies the background color of an element.</p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: lightblue;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First CSS Example&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+ <!-- This is for information -->
+ <div class="info">
+    <h1>CSS background-image</h1>
+    <p>The <doc>background-image</doc>property specifies an image to use as the background of an element.
+        
+        By default, the image is repeated so it covers the entire element.</p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-image: url("paper.gif");
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My Example&lt;/h1&gt;
+&lt;p&gt;This page has an image as the background!&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+ <!-- This is for information -->
+ <div class="info">
+    <p>The background image can also be set for specific elements, like the doc<doc>&lt;p&gt;</doc> element:</p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {
+    background-image: url("paper.gif");
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My Example&lt;/h1&gt;
+&lt;p&gt;This paragraph  has an image as the background!&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+ <!-- This is for information -->
+ <div class="info">
+    <h1>CSS background-repeat</h1>
+    <p>By default, the background-image property repeats an image both horizontally and vertically.
+        
+        Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+  
+  </div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My Example&lt;/h1&gt;
+&lt;p&gt;Here, a background image is repeated only horizontally!&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+    <h1>CSS background-repeat: no-repeat</h1>
+    <p>Showing the background image only once is also specified by the background-repeat property:</p>
+</div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My Example&lt;/h1&gt;
+&lt;p&gt;The background image only shows once, but it is disturbing the reader!&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>CSS background-position</h1>
+    <p>The background-position property is used to specify the position of the background image.</p>
+</div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My Example&lt;/h1&gt;
+&lt;p&gt;In this example we have also added a margin on the right side, so that the background image will not disturb the text.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>CSS background-attachment
+    </h1>
+    <p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+</div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My Example&lt;/h1&gt;
+&lt;p&gt;The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+<!-- This is for information -->
+<div class="info">
+    <h1>The background-size property specifies the size of the background images.
+    </h1>
+    <p>There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"), the one-value syntax (sets the width of the image (height becomes "auto"), the two-value syntax (first value: width of the image, second value: height), and the multiple background syntax (separated with comma).</p>
+
+    <h1>CSS Syntax</h1>
+    <p>background-size: auto|length|cover|contain;</p>
+    <p><doc>auto</doc>
+        Default value. The background image is displayed in its original size
+        <doc>length</doc>
+        Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto".
+        <doc>percentage</doc>
+        Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto"
+        <doc>cover</doc>
+        Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+        <doc>contain</doc>
+        Resize the background image to make sure the image is fully visible
+    </p>
+</div>
+  
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+
+#example2 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url(mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: 75% 50%;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;background-size: 75% 50%:&lt;/h2&gt;
+&lt;div id="example2"&gt;
+  &lt;h2&gt;Hello World&lt;/h2&gt;
+  &lt;p&gt;The size of the background image is set in percent of the parent element; 75% width and 50% height.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+    <h1>Example</h1>
+  <div class="block">
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+
+#example2 {
+    border: 2px solid black;
+    padding: 25px;
+    background: url(mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;background-size: cover:&lt;/h2&gt;
+&lt;div id="example2"&gt;
+    &lt;h2&gt;Hello World&lt;/h2&gt;
+    &lt;p&gt;The background image is resized to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+  
+       <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+  
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="">
+              <img src="notepadeg.png" />
+  
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- this is for code block with its out put -->
+<div class="codeblock">
+    <h1>Example</h1>
+  <div class="block">
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-markup">
+              &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  #example1 {
+    border: 2px solid black;
+    padding: 25px;
+    background: url(mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h1&gt;My Example&lt;/h1&gt;
+  &lt;p&gt;The background image is resized to make sure the image is fully visible.&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+  
+       <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+  
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="">
+              <img src="notepadeg.png" />
+  
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+
+  <!-- This is for information -->
+<div class="info">
+    <h1>CSS background-origin Property
+    </h1>
+    <p>The background-origin property specifies the origin position (the background positioning area) of a background image.</p>
+    <h1>Syntax</h1>
+    <p>background-origin: <doc>padding-box|border-box|content-box|initial|inherit;</doc></p>
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+    <h1>Example</h1>
+  <div class="block">
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#example1 {
+    border: 10px dashed black;
+    padding: 25px;
+    background: url(paper.gif);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+
+#example2 {
+    border: 10px dashed black;
+    padding: 25px;
+    background: url(paper.gif);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+#example3 {
+    border: 10px dashed black;
+    padding: 25px;
+    background: url(paper.gif);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;background-origin: padding-box (default):&lt;/h2&gt;
+&lt;div id="example1"&gt;
+    &lt;h2&gt;Hello World&lt;/h2&gt;
+    &lt;p&gt;The background image starts from the upper left corner of the padding edge.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;background-origin: border-box:&lt;/h2&gt;
+&lt;div id="example2"&gt;
+    &lt;h2&gt;Hello World&lt;/h2&gt;
+    &lt;p&gt;The background image starts from the upper left corner of the border.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;background-origin: content-box:&lt;/h2&gt;
+&lt;div id="example3"&gt;
+    &lt;h2&gt;Hello World&lt;/h2&gt;
+    &lt;p&gt;The background image starts from the upper left corner of the content.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+  
+       <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+  
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="">
+              <img src="notepadeg.png" />
+  
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS background-clip Property
+  </h1>
+  <p>The background-clip property defines how far the background (color or image) should extend within an element.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#example1 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: border-box;  
+}
+
+#example2 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The background-clip Property&lt;/h1&gt;
+
+&lt;p&gt;The background-clip property defines how far the background should extend within an element.&lt;/p&gt;
+
+&lt;p&gt;background-clip: border-box (this is default):&lt;/p&gt;
+&lt;div id="example1">
+  &lt;p&gt;The background extends behind the border.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;background-clip: padding-box:&lt;/p&gt;
+&lt;div id="example2">
+  &lt;p&gt;The background extends to the inside edge of the border.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;background-clip: content-box:&lt;/p&gt;
+&lt;div id="example3">
+  &lt;p&gt;The background extends to the edge of the content box.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+  
+
+    <script src="main.js" defer></script>
+    <script src="prism.js"></script>
+  </body>
+</html>
