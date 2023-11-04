@@ -71,12 +71,1080 @@
     <a href="#up"><img class="bookmarkarrow" src="images/arrow.png" height="100" width="100" style="float:right; position:absolute;right:7%;bottom:7%;position:fixed;z-index:2;"></a>
     <br><br><br><hr>
   
-    <div class="underdovelopment">
-      <center><img class="developmentimg" src="images/developmentimgcrown.png" ></center>
-      <h2>This Page is under Development</h2>
-      <h3>Thankyou for visiting</h3>
+   <!-- This is for information -->
+<div class="info">
+  <h1>Using width, max-width and margin: auto;
+    
+  </h1>
+  <p>As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+    
+    Setting the <doc>width</doc> of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;CSS Max-width&lt;/h2&gt;
+
+&lt;div class="ex1"&gt;This div element has width: 500px;&lt;/div&gt;
+&lt;br&gt;
+
+&lt;div class="ex2"&gt;This div element has max-width: 500px;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Drag the browser window to smaller than 500px wide, to see the difference between 
+the two divs!&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
     </div>
-  
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+  <!-- This is for information -->
+<div class="info">
+  <h1>The position Property
+    
+  </h1>
+  <p>The position property specifies the type of positioning method used for an element.
+    
+    There are five different position values:
+    
+    <doc>static
+      relative
+      fixed
+      absolute
+      sticky</doc>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;position: static;&lt;/h2&gt;
+
+&lt;p&gt;An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:&lt;/p&gt;
+
+&lt;div class="static"&gt;
+This div element has position: static;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+  <h1>position: relative;
+  </h1>
+  <p>
+    An element with <doc>position: relative;</doc> is positioned relative to its normal position.
+    
+    Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;position: relative;&lt;/h2&gt;
+
+&lt;p&gt;An element with position: relative; is positioned relative to its normal position:&lt;/p&gt;
+
+&lt;div class="relative"&gt;
+This div element has position: relative;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1>position: fixed;
+  </h1>
+  <p>
+    An element with <doc>position: fixed;</doc> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+    
+    A fixed element does not leave a gap in the page where it would normally have been located.
+    
+    Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;position: fixed;&lt;/h2&gt;
+
+&lt;p&gt;An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:&lt;/p&gt;
+
+&lt;div class="fixed"&gt;
+This div element has position: fixed;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>position: absolute;
+    
+  </h1>
+  <p>An element with <doc>position: absolute;</doc> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+    
+    However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+    
+    Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+    
+    Here is a simple example:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;position: absolute;&lt;/h2&gt;
+
+&lt;p&gt;An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):&lt;/p&gt;
+
+&lt;div class="relative"&gt;This div element has position: relative;
+  &lt;div class="absolute"&gt;This div element has position: absolute;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+  <h1>position: sticky;
+    
+  </h1>
+  <p>An element with <doc>position: sticky;</doc> is positioned based on the user's scroll position.
+    
+    A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Try to &lt;b&gt;scroll&lt;/b&gt; inside this frame to understand how sticky positioning works.&lt;/p&gt;
+
+&lt;div class="sticky"&gt;I am sticky!&lt;/div&gt;
+
+&lt;div style="padding-bottom:2000px"&gt;
+  &lt;p&gt;In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.&lt;/p&gt;
+  &lt;p&gt;Scroll back up to remove the stickyness.&lt;/p&gt;
+  &lt;p&gt;Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.&lt;/p&gt;
+  &lt;p&gt;Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1>The z-index Property
+    When elements are positioned, they can overlap other elements.
+    
+    The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+    
+    An element can have a positive or negative stack order:
+  </h1>
+  <p>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: lightgray;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Z-index Example&lt;/h1&gt;
+
+&lt;p&gt;An element with greater stack order is always above an element with a lower stack order.&lt;/p&gt;
+
+&lt;div class="container"&gt;
+  &lt;div class="black-box"&gt;Black box (z-index: 1)&lt;/div&gt;
+  &lt;div class="gray-box"&gt;Gray box (z-index: 3)&lt;/div&gt;
+  &lt;div class="green-box"&gt;Green box (z-index: 2)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Layout - float and clear
+  </h1>
+  <p>The CSS float property specifies how an element should float.
+
+    The CSS clear property specifies what elements can float beside the cleared element and on which side.
+    The float Property
+            The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+            
+            The float property can have one of the following values:
+            
+            left - The element floats to the left of its container
+            right - The element floats to the right of its container
+            none - The element does not float (will be displayed just where it occurs in the text). This is default
+            inherit - The element inherits the float value of its parent
+            In its simplest use, the float property can be used to wrap text around images.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+            
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+img {
+  float: right;
+  float: left;
+  float: none;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Float Right&lt;/h2&gt;
+
+&lt;p&gt;In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;"&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1>Example - Float Next To Each Other
+  </h1>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div {
+  float: left;
+  padding: 15px; 
+}
+
+.div1 {
+  background: red;
+}
+
+.div2 {
+  background: yellow;
+}
+
+.div3 {
+  background: green;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Float Next To Each Other&lt;/h2&gt;
+
+&lt;p&gt;In this example, the three divs will float next to each other.&lt;/p&gt;
+
+&lt;div class="div1"&gt;Div 1&lt;/div&gt;
+&lt;div class="div2"&gt;Div 2&lt;/div&gt;
+&lt;div class="div3"&gt;Div 3&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>The clear Property
+  </h1>
+  <p>
+    When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+    
+    The clear property specifies what should happen with the element that is next to a floating element.
+    
+    The clear property can have one of the following values:
+    
+    none - The element is not pushed below left or right floated elements. This is default
+    left - The element is pushed below left floated elements
+    right - The element is pushed below right floated elements
+    both - The element is pushed below both left and right floated elements
+    inherit - The element inherits the clear value from its parent
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Without clear&lt;/h2&gt;
+&lt;div class="div1"&gt;div1&lt;/div&gt;
+&lt;div class="div2"&gt;div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;h2&gt;With clear&lt;/h2&gt;
+&lt;div class="div3"&gt;div3&lt;/div&gt;
+&lt;div class="div4"&gt;div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>The clearfix Hack
+  </h1>
+  <p>
+    If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Without Clearfix&lt;/h2&gt;
+
+&lt;p&gt;This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+&lt;/div&gt;
+
+&lt;h2 style="clear:right"&gt;With Clearfix&lt;/h2&gt;
+&lt;p&gt;We can fix this by adding a clearfix class with overflow: auto; to the containing element:&lt;/p&gt;
+
+&lt;div class="clearfix"&gt;
+  &lt;img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Navigation Menu
+    
+  </h1>
+  <p>You can also use float with a list of hyperlinks to create a horizontal menu:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+<ul>
+  <li>&lt;a href="#home" class="active"&gt;Home&lt;/a&gt;</li>
+  <li>&lt;a href="#news"&gt;News&lt;/a&gt;</li>
+  <li>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</li>
+  <li>&lt;a href="#about"&gt;About&lt;/a&gt;</li>
+</ul>
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1>Web Layout Example
+  </h1>
+  <p>It is also common to do entire web layouts using the float property:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+.header, .footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="header"&gt;
+  &lt;h1&gt;Chania&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class="clearfix"&gt;
+  &lt;div class="column menu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The Flight&lt;/li&gt;
+      &lt;li&gt;The City&lt;/li&gt;
+      &lt;li&gt;The Island&lt;/li&gt;
+      &lt;li&gt;The Food&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class="column content"&gt;
+    &lt;h1&gt;The City&lt;/h1&gt;
+    &lt;p&gt;Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.&lt;/p&gt;
+    &lt;p&gt;You will learn more about web layout and responsive web pages in a later chapter.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="footer"&gt;
+  &lt;p&gt;Footer Text&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
 
 
     <script src="main.js" defer></script>
