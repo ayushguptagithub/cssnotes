@@ -70,13 +70,595 @@
     </div>
     <a href="#up"><img class="bookmarkarrow" src="images/arrow.png" height="100" width="100" style="float:right; position:absolute;right:7%;bottom:7%;position:fixed;z-index:2;"></a>
     <br><br><br><hr>
-    <div class="underdovelopment">
-      <center><img class="developmentimg" src="images/developmentimgcrown.png" ></center>
-      <h2>This Page is under Development</h2>
-      <h3>Thankyou for visiting</h3>
-    </div>
-               
+    <!-- This is for information -->
+<div class="info">
+  <h1>Center Align Elements
+  </h1>
+  <p>
+    To horizontally center a block element  use margin: auto;
+    
+    Setting the width of the element will prevent it from stretching out to the edges of its container.
+    
+    The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+  </p>
 
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Center Align Elements&lt;/h2&gt;
+&lt;p&gt;To horizontally center a block element (like div), use margin: auto;&lt;/p&gt;
+
+&lt;div class="center"&gt;
+  &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+         
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Flexbox Layout Module
+    
+  </h1>
+  <p>Before the Flexbox Layout module, there were four layout modes:
+    
+    Block, for sections in a webpage
+    Inline, for text
+    Table, for two-dimensional table data
+    Positioned, for explicit position of an element
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container &lt; div {
+  background-color: #f1f1f1;
+  min-width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Flexible Boxes&lt;/h1&gt;
+
+&lt;div class="flex-container"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;  
+  &lt;div&gt;4&lt;/div&gt;
+  &lt;div&gt;5&lt;/div&gt;
+  &lt;div&gt;6&lt;/div&gt;  
+  &lt;div&gt;7&lt;/div&gt;
+  &lt;div&gt;8&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Try to resize the browser window.&lt;/p&gt;
+&lt;p&gt;A container with "flex-wrap: nowrap;" will never wrap its items.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Flexbox is not supported in Internet Explorer 10 or earlier versions.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- This is for information -->
+<div class="info">
+  <h1>The flex container properties are:
+  </h1>
+  <p>
+    flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content
+    
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  &lt;!-- flex-direction: column-reverse; --&gt;
+  &lt;!-- flex-direction: row; --&gt;
+  &lt;!-- flex-direction: row-reverse; --&gt;
+  background-color: DodgerBlue;
+}
+
+.flex-container &gt; div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The flex-direction Property&lt;/h1&gt;
+
+&lt;p&gt;The "flex-direction: column;" stacks the flex items vertically (from top to bottom):&lt;/p&gt;
+
+&lt;div class="flex-container"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>The flex-wrap Property
+  </h1>
+  <p>
+    The <doc>The flex-wrap Property</doc> specifies whether the flex items should wrap or not.
+    
+    The examples below have 12 flex items, to better demonstrate the <doc>The flex-wrap Property</doc>.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  &lt;!-- flex-wrap: nowrap; --&gt;
+  &lt;!-- flex-wrap: wrap-reverse; --&gt;
+  &lt;!-- flex-wrap: row wrap; --&gt;
+  background-color: DodgerBlue;
+}
+
+.flex-container &gt; div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The flex-wrap Property&lt;/h1&gt;
+
+&lt;p&gt;The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:&lt;/p&gt;
+
+&lt;div class="flex-container"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;  
+  &lt;div&gt;4&lt;/div&gt;
+  &lt;div&gt;5&lt;/div&gt;
+  &lt;div&gt;6&lt;/div&gt;  
+  &lt;div&gt;7&lt;/div&gt;
+  &lt;div&gt;8&lt;/div&gt;
+  &lt;div&gt;9&lt;/div&gt;  
+  &lt;div&gt;10&lt;/div&gt;
+  &lt;div&gt;11&lt;/div&gt;
+  &lt;div&gt;12&lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;p&gt;Try resizing the browser window.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>The justify-content Property
+  </h1>
+  <p>
+    The <doc>justify-content property</doc> is used to align the flex items:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  justify-content: center;
+    &lt;!-- justify-content: flex-start; --&gt;
+  &lt;!-- justify-content: flex-end; --&gt;
+  &lt;!-- justify-content: space-between; --&gt;
+  &lt;!-- justify-content: space-around; --&gt;
+  background-color: DodgerBlue;
+}
+
+.flex-container &gt; div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The justify-content Property&lt;/h1&gt;
+
+&lt;p&gt;The "justify-content: flex-start;" aligns the flex items at the beginning of the container (this is default):&lt;/p&gt;
+
+&lt;div class="flex-container"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+ 
+<!-- This is for information -->
+<div class="info">
+  <h1>The align-items Property
+    
+  </h1>
+  <p>The <doc>align-items</doc> property is used to align the flex items.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  &lt;!-- align-items: flex-start; --&gt;
+  &lt;!-- align-items: flex-end; --&gt;
+  &lt;!-- align-items: stretch; --&gt;
+  &lt;!-- align-items: baseline; --&gt;
+  background-color: DodgerBlue;
+}
+
+.flex-container &gt; div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The align-items Property&lt;/h1&gt;
+
+&lt;p&gt;The "align-items: center;" aligns the flex items in the middle of the container:&lt;/p&gt;
+
+&lt;div class="flex-container"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+
+<!-- This is for information -->
+<div class="info">
+  <h1>The align-content Property
+  </h1>
+  <p>
+    The align-content property is used to align the flex lines.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  &lt;!-- align-content: space-around; --&gt;
+  &lt;!-- align-content: stretch; --&gt;
+  &lt;!-- align-content: center; --&gt;
+  &lt;!-- align-content: flex-start; --&gt;
+  &lt;!-- align-content: flex-end; --&gt;
+  overflow: scroll;
+  background-color: DodgerBlue;
+}
+
+.flex-container &gt; div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The align-content Property&lt;/h1&gt;
+
+&lt;p&gt;The "align-content: space-between;" displays the flex lines with equal space between them:&lt;/p&gt;
+
+&lt;div class="flex-container"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;  
+  &lt;div&gt;4&lt;/div&gt;
+  &lt;div&gt;5&lt;/div&gt;
+  &lt;div&gt;6&lt;/div&gt;  
+  &lt;div&gt;7&lt;/div&gt;
+  &lt;div&gt;8&lt;/div&gt;
+  &lt;div&gt;9&lt;/div&gt;  
+  &lt;div&gt;10&lt;/div&gt;
+  &lt;div&gt;11&lt;/div&gt;
+  &lt;div&gt;12&lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+  
 
     <script src="main.js" defer></script>
     <script src="prism.js"></script>
