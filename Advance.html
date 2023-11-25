@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+
+    <title>Information</title>
+  </head>
+  <body>
+
+
+    <div class="navbar">
+      <div class="logo-container">
+          <img src="images/AK logo.png" alt="logo" height="100px" width="300px" />
+      </div>
+      <div class="nav-content" id="nav-content">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link ">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link">Outline</a>
+          <a href="text.html" class="nav-link">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+          <a href="Advance.html" class="nav-link active">Advance</a>
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+          <!-- Add more links here -->
+         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </a>
+      </div>
+  </div>
+  <hr id="up"><hr><hr>
+    <div class="nav-hamburger" id="nav-hamburger">
+          <a href="index.html" class="nav-link">Intro</a>
+          <a href="selector.html" class="nav-link">Selectors</a>
+          <a href="background.html" class="nav-link">Background</a>
+          <a href="Colors.html" class="nav-link">Colors</a>
+          <a href="borders.html" class="nav-link">Borders</a>
+          <a href="box model.html" class="nav-link">Box Model</a>
+          <a href="outline.html" class="nav-link">Outline</a>
+          <a href="text.html" class="nav-link">Text</a>
+          <a href="fonts.html" class="nav-link">Fonts</a>
+          <a href="links.html" class="nav-link">Links</a>
+          <a href="tables.html" class="nav-link">Tables</a>
+          <a href="css layout.html" class="nav-link">Css Layout</a>
+          <a href="align.html" class="nav-link">Align</a>
+          <a href="combinators.html" class="nav-link">Combinators</a>
+          <a href="pseudo-classes.html" class="nav-link">Pseudo-classes</a>
+          <a href="opacity.html" class="nav-link">Opacity</a>
+          <a href="basicthings.html" class="nav-link">Dropdown</a>
+          <a href="forms.html" class="nav-link">css Forms</a>
+          <a href="Advance.html" class="nav-link active">Advance</a>
+          
+          <a href="Compiler.html" class="nav-link">Compiler</a>
+     
+        <!-- Add more links here -->
+    </div>
+    <a href="#up"><img class="bookmarkarrow" src="images/arrow.png" height="100" width="100" style="float:right; position:absolute;right:7%;bottom:7%;position:fixed;z-index:2;"></a>
+    <br><br><br><hr>
+    
+    <!-- This is for information -->
+<div class="info">
+    <h1>CSS border-radius Property
+    </h1>
+    <p>The CSS <doc>border-radius</doc> property defines the radius of an element's corners.
+    </p>
+  
+  </div>
+  
+  <!-- this is for code block with its out put -->
+  <div class="codeblock">
+    <h1>Example</h1>
+  <div class="block">
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+#rcorners1 {
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners2 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners3 {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+} 
+
+#rcorners4 {
+    border-radius: 15px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+} 
+
+
+#rcorners5 {
+    border-radius: 50px / 15px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners6 {
+    border-radius: 15px / 50px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners7 {
+    border-radius: 50%;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The border-radius Property&lt;/h1&gt;
+
+&lt;p&gt;Four values - border-radius: 15px 50px 30px 5px:&lt;/p&gt;
+&lt;p id="rcorners1"&gt;&lt;/p&gt;
+
+&lt;p&gt;Three values - border-radius: 15px 50px 30px:&lt;/p&gt;
+&lt;p id="rcorners2"&gt;&lt;/p&gt;
+
+&lt;p&gt;Two values - border-radius: 15px 50px:&lt;/p&gt;
+&lt;p id="rcorners3"&gt;&lt;/p&gt;
+
+&lt;p&gt;One value - border-radius: 15px:&lt;/p&gt;
+&lt;p id="rcorners4"&gt;&lt;/p&gt;
+
+&lt;h1&gt;The border-radius Property&lt;/h1&gt;
+
+&lt;p&gt;Elliptical border - border-radius: 50px / 15px:&lt;/p&gt;
+&lt;p id="rcorners5"&gt;&lt;/p&gt;
+
+&lt;p&gt;Elliptical border - border-radius: 15px / 50px:&lt;/p&gt;
+&lt;p id="rcorners6"&gt;&lt;/p&gt;
+
+&lt;p&gt;Ellipse border - border-radius: 50%:&lt;/p&gt;
+&lt;p id="rcorners7"&gt;&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+  
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+  
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="">
+              <img src="notepadeg.png" />
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+               
+<!-- This is for information -->
+<div class="info">
+    <h1>CSS Gradients
+    </h1>
+    <p>CSS gradients let you display smooth transitions between two or more specified colors.
+
+        CSS defines three types of gradients:
+        
+       <doc> Linear Gradients (goes down/up/left/right/diagonally)
+        Radial Gradients (defined by their center)
+        Conic Gradients (rotated around a center point)</doc>
+        
+    </p>
+  
+  </div>
+  
+  <!-- this is for code block with its out put -->
+  <div class="codeblock">
+    <h1>Example</h1>
+  <div class="block">
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#grad1 {
+    margin: 20px;
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow);
+}
+#grad {
+    margin: 20px;
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+#grad2 {
+    margin: 20px;
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+#grad3 {
+    margin: 20px;
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(180deg, red, yellow);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Linear Gradient - Top to Bottom&lt;/h1&gt;
+&lt;p&gt;This linear gradient starts red at the top, transitioning to yellow at the bottom:&lt;/p&gt;
+
+&lt;div id="grad1"&gt;&lt;/div&gt;
+&lt;div id="grad"&gt;&lt;/div&gt;
+&lt;div id="grad2"&gt;&lt;/div&gt;
+&lt;div id="grad3"&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+  
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+  
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="">
+              <img src="notepadeg.png" />
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+
+<!-- This is for information -->
+<div class="info">
+    <h1>CSS box-shadow Property
+        
+    </h1>
+    <p>The CSS <doc> box-shadow property</doc> is used to apply one or more shadows to an element.
+    </p>
+  
+  </div>
+  
+  <!-- this is for code block with its out put -->
+  <div class="codeblock">
+    <h1>Example</h1>
+  <div class="block">
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The box-shadow Property&lt;/h1&gt;
+
+&lt;div&gt;This is a div element with a box-shadow&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+  
+     <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+  
+      <div class="container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="">
+              <img src="notepadeg.png" />
+            </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- This is for information -->
+<div class="info">
+  <h1>CSS Text Effects
+  </h1>
+  <p>CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes
+    In this chapter you will learn about the following properties:
+    
+   <doc> text-overflow
+    word-wrap
+    word-break
+    writing-mode</doc>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;
+    width: 400px; 
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Hover over the two divs below, to see the entire text.&lt;/p&gt;
+&lt;div class="test" style="text-overflow:ellipsis;"&gt;This is some long text that will not fit in the box&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="test" style="text-overflow:clip;"&gt;This is some long text that will not fit in the box&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Word Wrapping
+</h1>
+  <p>The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+  </p>
+  <h1>
+    CSS Word Breaking
+  </h1>
+  <p>The CSS word-break property specifies line breaking rules.
+  </p>
+
+  <h1>CSS Writing Mode
+  </h1>
+<p>    The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+</p>
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+p.test {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+
+p.test1 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: keep-all;
+}
+
+p.test2 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: break-all;
+}
+
+p.test3 {
+  writing-mode: horizontal-tb; 
+}
+
+span.test1 {
+  writing-mode: vertical-rl; 
+}
+
+p.test4 {
+  writing-mode: vertical-rl; 
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p class="test"&gt;This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.&lt;/p&gt;
+
+&lt;p class="test1"&gt;This paragraph contains some text. This line will-break-at-hyphens.&lt;/p&gt;
+
+&lt;p class="test2"&gt;This paragraph contains some text. The lines will break at any character.&lt;/p&gt;
+
+&lt;p class="test3"&gt;Some text with default writing-mode.&lt;/p&gt;
+
+&lt;p&gt;Some text with a span element with a &lt;span class="test1"&gt;vertical-rl&lt;/span&gt; writing-mode.&lt;/p&gt;
+
+&lt;p class="test4"&gt;Some text with writing-mode: vertical-rl.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS 2D Transforms
+  </h1>
+  <p>With the CSS transform property you can use the following 2D transformation methods:
+
+    <doc>translate()
+      rotate()
+      scaleX()
+      scaleY()
+      scale()
+      skewX()
+      skewY()
+      skew()
+      matrix()</doc>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The translate() Method&lt;/h1&gt;
+&lt;p&gt;The translate() method moves an element from its current position:&lt;/p&gt;
+
+&lt;div&gt;
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: rotate(-20deg);
+}
+div#myDiv:hover {
+  transform: rotate(20deg);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The rotate() Method&lt;/h1&gt;
+
+&lt;p&gt;The rotate() method rotates an element clockwise or counter-clockwise.&lt;/p&gt;
+
+&lt;div&gt;
+This a normal div element.
+&lt;/div&gt;
+
+&lt;div id="myDiv"&gt;
+This div element is rotated counter-clockwise with 20 degrees.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.scale {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);
+}
+div.scale:hover {
+  transform: scale(0.5,0.5);
+}
+
+div.scale_width {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(2);
+}
+
+div.scale_height {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(2);
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The scale() Method&lt;/h1&gt;
+
+&lt;p&gt;The scale(width,height) method increases or decreases the size of an element.&lt;/p&gt;
+
+&lt;div class="scale"&gt;
+This div element is two times of its original width, and three times of its original height.
+&lt;/div&gt;
+
+&lt;div class="scale_width"&gt;
+This div element is two times of its original width, and three times of its original height.
+&lt;/div&gt;
+
+&lt;div class="scale_height"&gt;
+This div element is two times of its original width, and three times of its original height.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 50px;
+}
+
+div#myDiv {
+  transform: skewX(20deg);
+}
+
+div#myDiv2 {
+  transform: skewY(20deg);
+}
+
+div#myDiv3 {
+  transform: skew(20deg,10deg);
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The skewX() Method&lt;/h1&gt;
+
+&lt;p&gt;The skewX() method skews an element along the X-axis by the given angle.&lt;/p&gt;
+
+&lt;div&gt;
+This a normal div element.
+&lt;/div&gt;
+
+&lt;div id="myDiv"&gt;
+This div element is skewed 20 degrees along the X-axis.
+&lt;/div&gt;
+
+&lt;div id="myDiv2"&gt;
+This div element is skewed 20 degrees along the X-axis.
+&lt;/div&gt;
+
+&lt;div id="myDiv3"&gt;
+This div element is skewed 20 degrees along the X-axis.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The matrix() Method&lt;/h1&gt;
+
+&lt;p&gt;The matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) method combines all the 2D transform methods into one.&lt;/p&gt;
+
+&lt;div&gt;
+This a normal div element.
+&lt;/div&gt;
+
+&lt;div id="myDiv1"&gt;
+Using the matrix() method.
+&lt;/div&gt;
+
+&lt;div id="myDiv2"&gt;
+Another use of the matrix() method.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS 3D Transforms Methods
+    
+  </h1>
+  <p>With the CSS transform property you can use the following 3D transformation methods:
+    
+    <doc>rotateX()
+      rotateY()
+      rotateZ()</doc>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+#myDiv1 {
+  transform: rotateX(150deg);
+}
+#myDiv2 {
+  transform: rotateY(150deg);
+}
+#myDiv3 {
+  transform: rotateZ(150deg);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The rotateZ() Method&lt;/h1&gt;
+
+&lt;p&gt;The rotateZ() method rotates an element around its Z-axis at a given degree.&lt;/p&gt;
+
+&lt;div&gt;
+This a normal div element.
+&lt;/div&gt;
+
+&lt;div id="myDiv1"&gt;
+This div element is rotated 90 degrees.
+&lt;/div&gt;
+
+&lt;div id="myDiv2"&gt;
+This div element is rotated 90 degrees.
+&lt;/div&gt;
+
+&lt;div id="myDiv3"&gt;
+This div element is rotated 90 degrees.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Transitions
+    
+  </h1>
+  <p>CSS transitions allows you to change property values smoothly, over a given duration.
+
+    <doc>transition
+      transition-delay
+      transition-duration
+      transition-property
+      transition-timing-function</doc>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The transition Property&lt;/h1&gt;
+
+&lt;p&gt;Hover over the div element below, to see the transition effect:&lt;/p&gt;
+&lt;div&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Specify the Speed Curve of the Transition
+  </h1>
+  <p>The transition-timing-function property specifies the speed curve of the transition effect.
+
+    The transition-timing-function property can have the following values:
+    
+    ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+    linear - specifies a transition effect with the same speed from start to end
+    ease-in - specifies a transition effect with a slow start
+    ease-out - specifies a transition effect with a slow end
+    ease-in-out - specifies a transition effect with a slow start and end
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The transition-timing-function Property&lt;/h1&gt;
+
+&lt;p&gt;Hover over the div elements below, to see the different speed curves:&lt;/p&gt;
+
+&lt;div id="div1"&gt;linear&lt;/div&gt;&lt;br&gt;
+&lt;div id="div2"&gt;ease&lt;/div&gt;&lt;br&gt;
+&lt;div id="div3"&gt;ease-in&lt;/div&gt;&lt;br&gt;
+&lt;div id="div4"&gt;ease-out&lt;/div&gt;&lt;br&gt;
+&lt;div id="div5"&gt;ease-in-out&lt;/div&gt;&lt;br&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Delay the Transition Effect
+   
+  </h1>
+  <p> The transition-delay property specifies a delay (in seconds) for the transition effect.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The transition-delay Property&lt;/h1&gt;
+
+&lt;p&gt;Hover over the div element below, to see the transition effect:&lt;/p&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The transition effect has a 1 second delay before starting.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>CSS Animations
+  </h1>
+  <p>In this chapter you will learn about the following properties:
+
+    <doc>@keyframes
+      animation-name
+      animation-duration
+      animation-delay
+      animation-iteration-count
+      animation-direction
+      animation-timing-function
+      animation-fill-mode
+      animation</doc>
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; When an animation is finished, it goes back to its original style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; When an animation is finished, it goes back to its original style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Delay an Animation
+    
+  </h1>
+  <p>The animation-delay property specifies a delay for the start of an animation.
+    
+    The following example has a 2 seconds delay before starting the animation:
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; When an animation is finished, it goes back to its original style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Set How Many Times an Animation Should Run
+  </h1>
+  <p>The animation-iteration-count property specifies the number of times an animation should run.
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; When an animation is finished, it goes back to its original style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>animation-iteration-count: infinite;
+  </h1>
+  <p>The following example uses the value "infinite" to make the animation continue for ever:
+  </p>
+
+</div>
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; When an animation is finished, it goes back to its original style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Run Animation in Reverse Direction or Alternate Cycles
+  </h1>
+  <p>
+    The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+    
+    The animation-direction property can have the following values:
+    
+    normal - The animation is played as normal (forwards). This is default
+    reverse - The animation is played in reverse direction (backwards)
+    alternate - The animation is played forwards first, then backwards
+    alternate-reverse - The animation is played backwards first, then forwards
+  </p>
+
+</div>
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+   &lt;!-- animation-direction: alternate; --&gt; 
+  &lt;!-- animation-direction: alternate-reverse;   --&gt; 
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; When an animation is finished, it goes back to its original style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Specify the Speed Curve of the Animation
+  </h1>
+  <p>
+    The animation-timing-function property specifies the speed curve of the animation.
+    
+    The animation-timing-function property can have the following values:
+    
+    ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+    linear - Specifies an animation with the same speed from start to end
+    ease-in - Specifies an animation with a slow start
+    ease-out - Specifies an animation with a slow end
+    ease-in-out - Specifies an animation with a slow start and end
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;p&gt;The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:&lt;/p&gt;
+
+&lt;div id="div1"&gt;linear&lt;/div&gt;
+&lt;div id="div2"&gt;ease&lt;/div&gt;
+&lt;div id="div3"&gt;ease-in&lt;/div&gt;
+&lt;div id="div4"&gt;ease-out&lt;/div&gt;
+&lt;div id="div5"&gt;ease-in-out&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- This is for information -->
+<div class="info">
+  <h1>Specify the fill-mode For an Animation
+  </h1>
+  <p>
+    CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior.
+    
+    The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).
+    
+    The animation-fill-mode property can have the following values:
+    
+    none - Default value. Animation will not apply any styles to the element before or after it is executing
+    forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+    backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+    both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+  </p>
+
+</div>
+
+<!-- this is for code block with its out put -->
+<div class="codeblock">
+  <h1>Example</h1>
+<div class="block">
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+  &lt;!-- animation-fill-mode: backwards; --&gt;
+  &lt;!-- animation-fill-mode: both; --&gt;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;CSS Animation&lt;/h1&gt;
+
+&lt;p&gt;Let the div element retain the style values set by the last keyframe when the animation ends:&lt;/p&gt;
+
+&lt;div&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+
+   <span id="arrow" style='font-size:100px; margin-top:100px;'>&#8594;</span>
+
+    <div class="container">
+      <div class="code-wrapper">
+        <pre>
+          <code id="code" class="">
+            <img src="notepadeg.png" />
+          </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+    <script src="main.js" defer></script>
+    <script src="prism.js"></script>
+  </body>
+</html>
